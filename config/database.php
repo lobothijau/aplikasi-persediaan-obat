@@ -13,7 +13,7 @@
 $server   = "127.0.0.1";
 $username = "persediaanobat";
 $password = "b4l4b4l4";
-$database = "persediaan_obat";
+$database = "persediaanobat";
 
 // koneksi database
 $mysqli = new mysqli($server, $username, $password, $database);
