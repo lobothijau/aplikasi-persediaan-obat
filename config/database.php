@@ -11,9 +11,9 @@
 <?php
 // deklarasi parameter koneksi database
 $server   = "localhost";
-$username = "root";
-$password = "root";
-$database = "i_persediaan_obat";
+$username = "persediaanobat";
+$password = "b4l4b4l4";
+$database = "persediaan_obat";
 
 // koneksi database
 $mysqli = new mysqli($server, $username, $password, $database);
