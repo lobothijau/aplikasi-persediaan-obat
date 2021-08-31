@@ -79,7 +79,7 @@ $count  = mysqli_num_rows($query);
     </body>
 </html><!-- Akhir halaman HTML yang akan di konvert -->
 <?php
-$filename="LAPORAN STOK OBAT.pdf"; //ubah untuk menentukan nama file pdf yang dihasilkan nantinya
+$filename="LAPORAN-STOK-OBAT.pdf"; //ubah untuk menentukan nama file pdf yang dihasilkan nantinya
 //==========================================================================================================
 $content = ob_get_clean();
 $content = '<page style="font-family: freeserif">'.($content).'</page>';
