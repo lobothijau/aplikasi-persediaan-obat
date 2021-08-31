@@ -11,8 +11,8 @@
 <?php
 // deklarasi parameter koneksi database
 $server   = "127.0.0.1";
-$username = "persediaanobat";
-$password = "b4l4b4l4";
+$username = "root";
+$password = "";
 $database = "persediaanobat";
 
 // koneksi database

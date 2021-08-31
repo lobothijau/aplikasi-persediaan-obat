@@ -127,13 +127,14 @@ $filename="LAPORAN-DATA-OBAT-MASUK.pdf"; //ubah untuk menentukan nama file pdf y
 $content = ob_get_clean();
 $content = '<page style="font-family: freeserif">'.($content).'</page>';
 // panggil library html2pdf
-require_once('../../assets/plugins/html2pdf_v4.03/html2pdf.class.php');
+require __DIR__.'/../../vendor/autoload.php';
+use Spipu\Html2Pdf\Html2Pdf;
 try
 {
-    $html2pdf = new HTML2PDF('P','F4','en', false, 'ISO-8859-15',array(10, 10, 10, 10));
+    $html2pdf = new Html2Pdf('P','A4','en', false, 'ISO-8859-15',array(10, 10, 10, 10));
     $html2pdf->setDefaultFont('Arial');
     $html2pdf->writeHTML($content, isset($_GET['vuehtml']));
-    $html2pdf->Output($filename, 'D');
+    $html2pdf->output($filename, 'D');
 }
 catch(HTML2PDF_exception $e) { echo $e; }
 ?>
